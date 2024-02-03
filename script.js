@@ -4,13 +4,13 @@ let button=document.getElementById("submit-button");
 let listContainer=document.querySelector(".list");
 let date=new Date();
 console.log(date.getTime());
-const [timestamp, apiKey, hashValue]=[ts,publicKey,hashVal];
+const [timestamp, apiKey]=[ts,publicKey];
 button.addEventListener("click",(getResult=async ()=>{
     if(input.ariaValueMax.trim().length<1){
         alert("Input cannot be blank");
     }
     showContainer.innerHTML="";
-    const url=`https://gateway.marvel.com:443/v1/public/characters?ts=${timestamp}&apikey=${apiKey}&hash=${hashValue}&name=${input.value}`;
+    const url=`https://gateway.marvel.com:443/v1/public/characters?ts=${timestamp}&apikey=${apiKey}&name=${input.value}`;
     const response=await fetch(url);
     const jsonData= await response.json();
     jsonData.data["results"].forEach((element)=>{
