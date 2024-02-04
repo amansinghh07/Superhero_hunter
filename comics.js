@@ -1,7 +1,7 @@
 const req= new XMLHttpRequest();
-const public_key='9798c70d3a564b5b348e0faab8ac5062';
-const private_key='da5aafdff6ebeddaa9bc8db4b9e87dbc02ca049a'
-const apiKey='9798c70d3a564b5b348e0faab8ac5062'
+const public_key='e62af5707b11f787003e1332af1fab10';
+const private_key='0a825c5119b7977ca58b58cf8db6a36fcb738082';
+const apiKey='e62af5707b11f787003e1332af1fab10'
 
 var curr_Comic_Char_ToShow=null
 const ts=Date.now();

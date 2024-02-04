@@ -204,4 +204,3 @@ function favoriteDelete(id){
     }
     window.location.replace('favorites.html')
 }
-
